@@ -10,7 +10,7 @@ urlpatterns = [
 
 
 
-#=== ----------------------------------------- ruta za forme
+#=== ----------------------------------------- ruta za forme za dodavanje
 
     path('kategorije-add/', views.KategorijeAddView.as_view(), name = 'Kategorije-add'),
     path('potkategorije-add/', views.PotkategorijeAddView.as_view(), name = 'Potkategorije-add'),
