@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block sadrzaj %}
+
+<table class = "table table-striped table-borderless">
+    <thead class = "table-dark">
+        <tr>
+            <th scope="col">Potkategorije</th> 
+            <th scope="col">Opis</th> 
+            <th scope="col">Potkategorija</th> 
+            <th scope="col">Kupac</th>
+        </tr>
+    </thead>
+<tbody>
+{% for stranica in proizvodi_list %}
+<tr>
+<td>{{ stranica.naziv_proizvoda }}</td>
+<td>{{ stranica.opis_proizvoda }}</td>
+<td>{{ stranica.potkategorija_veza }}</td>
+<td>{{ stranica.kupac_veza }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}
+

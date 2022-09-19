@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block sadrzaj %}
+
+<form class="form-group" method="post">
+    {% csrf_token %}
+    <table class = "table table-bordered table-hover">
+        {{form.as_table}}
+    </table>
+
+    <input class = "btn btn-primary" type = "submit" value = "Save">
+
+</form>
+
+{% endblock %}
